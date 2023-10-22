@@ -1,0 +1,41 @@
+<div>
+    <h2>Register New Organisation</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <label>Enter Your id</label>
+        <input type="number" formControlName="id"/><br/>
+
+        <label>Enter Your CompanyName</label>
+        <input type="text" formControlName="companyName"/><br/>
+
+        <label>Enter Your CompanyAddress</label>
+        <input type="text" formControlName="companyAddress"/><br/>
+
+        <label>Enter Your Company RegisterNumber</label>
+        <input type="text" formControlName="registerNumber"/><br/>
+
+        <label>Enter Your FirstName</label>
+        <input type="text" formControlName="firstName"/><br/>
+
+        <label>Enter Your LastName</label>
+        <input type="text" formControlName="lastName"/><br/>
+
+      <label>Enter Your Email Id</label>
+      <input type="email" formControlName="email"/><br/>
+
+      <label>Enter Your Password</label>
+      <input type="password" formControlName="password"/><br/>
+
+      <label>typesOfRole</label>
+      <input type="radio" name="typesOfRole" value="admin" formControlName="typesOfRole"/>admin
+      <input type="radio" name="typesOfRole" value="user" formControlName="typesOfRole"/>user<br/>
+
+      <input type="submit" value="Register"/>
+
+      <input type="reset" value="reset"/>
+
+
+    </form>
+    <br/>
+    <span style="color: red;">{{msg}}</span><br/>
+    <a routerLink="/signUp">Register</a>
+</div>

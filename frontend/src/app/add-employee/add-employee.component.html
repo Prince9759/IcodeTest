@@ -1,0 +1,33 @@
+<div>
+    <h2>Add Employee</h2>
+
+    <span style="color: red;">{{storemsg}}</span>
+   <form [formGroup]=" employeeRef" (ngSubmit)="storeEmployee()">
+
+    <label>Enter Employee id</label>
+    <input type="number" formControlName="eid"/><br/>
+
+    <label>Enter Employee FirstName</label>
+    <input type="text" formControlName="firstName"/><br/>
+
+    <label>Enter Employee LastName</label>
+    <input type="text" formControlName="lastName"/><br/>
+
+    <label>Enter Employee Email</label>
+    <input type="text" formControlName="email"/><br/>
+
+    <label>Enter Employee Password</label>
+    <input type="text" formControlName="password"/><br/>
+
+    <label>Enter company name</label>
+    <input type="text" formControlName="companyName"/><br/>
+
+    <label>typesOfRole</label>
+    <input type="radio" name="typesOfRole" value="admin" formControlName="typesOfRole"/>admin
+    <input type="radio" name="typesOfRole" value="user" formControlName="typesOfRole"/>user<br/>
+
+    <input type="submit" value="AddEmployee"/>
+
+    <input type="reset" value="reset"/>
+   </form> 
+</div>

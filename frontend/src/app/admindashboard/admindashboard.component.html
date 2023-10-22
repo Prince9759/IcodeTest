@@ -1,0 +1,15 @@
+<div>
+    <h2>Welcome to home Page admin {{user}}</h2>
+     <h2>Number Of User in {{comapanyName}}:{{count}}</h2>
+     <h2>Number Of Active User :{{count}}</h2>
+    <a routerLink="/addemp">AddEmployee</a>
+    
+
+    <router-outlet></router-outlet>
+  
+    <br/>
+
+        <input type="button" value="logout" (click)="logout()"/>
+
+
+</div>
